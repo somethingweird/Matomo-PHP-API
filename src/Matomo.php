@@ -464,6 +464,13 @@ class Matomo
      * Requests to matomo api
      */
 
+	/** 
+	 * make Public API request 
+	 */
+	public function my_request(string $method, array $params = [], array $optional = []) {
+		return $this->_request($method, $params, $optional);
+	}
+	
     /**
      * Make API request
      *
